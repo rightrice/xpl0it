@@ -10,6 +10,8 @@ from time import sleep
 from typing import Tuple
 website = "website.com"
 database = "database.website"
+## clear terminal
+os.system('cls')
 ## Typewriter affect
 DELAY: float = .1
 def cc(*paragraph:str) -> None:
