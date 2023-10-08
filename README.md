@@ -7,7 +7,7 @@
 
 **Antivirus**
 
-This is a huge work in progress. I have been wanting to challenge myself lately and so I decided to make my own antivirus. So far, it is only in CLI form, and so far it doesn't fully work...hence work in progress.
+This is a huge work in progress. I have been wanting to challenge myself lately and so I decided to make my own antivirus. So far, it is only in CLI form, and so far it doesn't fully work...hence work in progress. I intend to implement both signature based and heuristic based scanning tools in the system. So far I have been making decent progress on the signature based portion of the syste. Currently, I am held back by the lack of having a server to house the terabytes of data required for signature based systems. 
 
 **Hash Generator/Search**
 
