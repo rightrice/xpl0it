@@ -33,7 +33,7 @@ def secure_quarantine(file_path, quarantine_dir, hash_function):
         print(f"Failed to quarantine the file: {e}")
 
 file_to_quarantine = ""
-quarantine_directory = "path/to/quarantine/directory"
+quarantine_dir = "/deadToRights"
 
 def calculate_sha256_hash(file_path):
     sha256_hash = hashlib.sha256()
@@ -44,4 +44,4 @@ def calculate_sha256_hash(file_path):
                 break
             sha256_hash.update(data)
     return sha256_hash.hexdigest()
-secure_quarantine(file_to_quarantine, quarantine_directory, calculate_sha256_hash)
+secure_quarantine(file_to_quarantine, quarantine_dir, calculate_sha256_hash)

@@ -23,37 +23,37 @@ def scan_file(file_path):
             ## this is where I add quarantine and have y/n prompt to kill file
 
             ## desktop notification cause we boujee
-            notification.notify(
-                title="Malware Detected!",
-                message="Please check XPL0IT to determine what to do with the malware.",
-                app_name="Name",
-                ticker="test",
-                ##  app_icon="test.ico",
-                timeout=7
-            )
+#            notification.notify(
+#                title="Malware Detected!",
+#                message="Please check XPL0IT to determine what to do with the malware.",
+#                app_name="Name",
+#                ticker="test",
+#                app_icon="jellyfish.ico",
+#                timeout=7
+#            )
         else:
             print(f"No malware was detected in this file: {file_path}.")
             ## y/n prompt to search another file
             ## input("Please type your next file path...")
             ## notification
-            notification.notify(
-                title="No Malware Detected!",
-                message="You may scan another file or exit the program safely.",
-                app_name="Name",
-                ticker="test",
-                ##  app_icon="test.ico",
-                timeout=7
-            )
+#            notification.notify(
+#                title="No Malware Detected!",
+#                message="You may scan another file or exit the program safely.",
+#                app_name="Name",
+#                ticker="test",
+#                app_icon="jellyfish.ico",
+#                timeout=7
+#            )
     else:
         print(f"File not found: {file_path}.")
-        notification.notify(
-            title="No File Found!",
-            message="Please check your file path and try again.",
-            app_name="Name",
-            ticker="test",
-            ##  app_icon="test.ico",
-            timeout=7
-        )
+#        notification.notify(
+#            title="No File Found!",
+#            message="Please check your file path and try again.",
+#            app_name="Name",
+#            ticker="test",
+#            app_icon="jellyfish.ico",
+#            timeout=7
+#        )
 
 def scan_directory(directory_path):
     for root, _, files in os.walk(directory_path):
@@ -63,7 +63,7 @@ def scan_directory(directory_path):
 
             if file_hash:
                 if file_hash in malware_signatures.values():
-                    print(f"Malware detected! The infected file(s) in this directory are: {directory_path}")
+                    print(f"Malware detected! The infected file(s) in this directory are: {file_path}")
                     ## This is where I add quarantine and have y/n prompt to kill directory
                 else:
                     print(f"No malware was detected in directory: {directory_path}")
